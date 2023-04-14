@@ -116,6 +116,11 @@ button:hover {
   margin: 0 0 2em 1em;
 }
 
+.other-articles {
+  color: #e2e9c0;
+  display: flex;
+  justify-content: center;
+}
 /*************************************************************
                         A PROPOS
 **************************************************************/
@@ -145,9 +150,10 @@ button:hover {
                         FOOTER
 **************************************************************/
 footer {
+  width: 100%;
   background-color: #7aa95c;
   text-align: center;
-  color: #e2e9c0;
+  color: #fff;
   padding: 1em;
   margin-top: 2em;
 }
