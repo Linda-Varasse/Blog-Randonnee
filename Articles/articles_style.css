@@ -13,6 +13,7 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
 .container {
   width: 90%;
   margin: auto;
@@ -63,7 +64,14 @@ header ul li a:hover {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
-
+/***************************************************************
+                        TITRE
+**************************************************************/
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: 1px dashed #7aa95c;
+}
 /***************************************************************
                         ARTICLE
 **************************************************************/
@@ -72,17 +80,63 @@ header ul li a:hover {
   flex-wrap: wrap;
 }
 .article-box {
-  background-color: rgba(226, 233, 192, 0.4);
+  background-color: #e2e9c0ca;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1em;
   margin: 1em;
   width: 40%;
+  border-radius: 10px;
 }
 .article-box img {
   width: 90%;
+  margin-bottom: 1em;
 }
+.informations {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.distance,
+.high,
+.time {
+  display: flex;
+  flex-direction: column;
+}
+.levels {
+  display: flex;
+  align-items: center;
+}
+.levels img {
+  width: 50px;
+}
+
+.distance img,
+.high img,
+.time img {
+  width: 50px;
+}
+
+button {
+  padding: 0.5em 1em;
+  background-color: #7aa95c;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #e2e9c0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e2e9c0;
+  border: 2px solid #7aa95c;
+  color: #7aa95c;
+}
+
 /***************************************************************
                         FOOTER
 **************************************************************/
