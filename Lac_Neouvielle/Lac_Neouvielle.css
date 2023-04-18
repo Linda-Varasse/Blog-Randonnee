@@ -1,0 +1,122 @@
+/**********************************************
+                    GLOBAL 
+********************************************/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 900px;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+}
+
+/********************************************
+                        HEADER
+    *********************************************/
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(226, 233, 192, 0.8);
+}
+header img {
+  width: 200px;
+  height: auto;
+}
+header nav {
+  width: 100%;
+  background-color: #7aa95c;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+header ul li {
+  justify-content: space-around;
+}
+header ul li a {
+  color: #fff;
+  font-size: 1rem;
+}
+header ul li a:hover {
+  font-weight: bold;
+  color: #e2e9c0;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/********************************************
+                        main
+    *********************************************/
+
+.flex-images {
+  display: flex;
+}
+.flex-images img {
+  width: 30%;
+  height: auto;
+  margin: 1em;
+}
+h1 {
+  text-align: center;
+  border-bottom: 1px dashed #7aa95c;
+  margin-bottom: 2em;
+}
+
+/********************************************
+                        Section 1 map
+    *********************************************/
+section .map {
+  float: right;
+  margin-left: 2em;
+  width: 50%;
+}
+/********************************************
+                        Section 2 informations
+    *********************************************/
+.infos {
+  clear: both;
+  margin-top: 2em;
+}
+.informations {
+  width: 100%;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.informations img {
+  width: 20%;
+}
+.distance,
+.high,
+.time {
+  display: flex;
+}
+.informations .levels {
+  display: flex;
+}
+.levels img {
+  width: 10%;
+}
