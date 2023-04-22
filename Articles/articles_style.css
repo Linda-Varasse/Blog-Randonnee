@@ -80,13 +80,15 @@ h1 {
   flex-wrap: wrap;
 }
 .article-box {
-  background-color: #e2e9c0ca;
+  /* background-color: #e2e9c0ca; */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1em;
   margin: 1em;
   width: 40%;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
   border-radius: 10px;
 }
 .article-box img {
@@ -155,4 +157,17 @@ footer {
 footer img {
   width: 15%;
   margin: 1em 1em;
+}
+/***************************************************************
+                        MEDIA QUERIES 
+**************************************************************/
+@media screen and (max-width: 715px) {
+  .all-articles {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .article-box {
+    width: 90%;
+  }
 }
