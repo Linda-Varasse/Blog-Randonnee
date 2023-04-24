@@ -91,6 +91,7 @@ h1 {
 }
 .last-articles p {
   line-height: 1.5em;
+  text-align: justify;
 }
 .last-articles hr {
   clear: both;
@@ -131,7 +132,7 @@ button:hover {
   clear: both;
   width: 90%;
   margin: auto;
-  height: 300px;
+  height: 400px;
   background-image: url("src/images/a_propos_bg.jpg");
   background-size: cover;
   background-position: center;
@@ -143,6 +144,8 @@ button:hover {
   width: 50%;
   margin: auto;
   position: relative;
+  line-height: 1.5em;
+  text-align: justify;
 }
 .profil-box h2 {
   text-align: center;
@@ -164,7 +167,7 @@ footer {
   margin: 0 0.5em;
 }
 footer img {
-  width: 15%;
+  width: 10%;
   margin: 1em 1em;
 }
 
