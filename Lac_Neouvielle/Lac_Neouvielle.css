@@ -91,23 +91,58 @@ h1 {
 /********************************************
                         SLIDER
     *********************************************/
-.slides {
-  clear: both;
+.owl-carousel {
+  width: 60%;
+  margin: 0 auto;
 }
-.slider img {
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.owl-carousel .img1 {
+  background-image: url("../src/Lacs_neouvielle/19.JPG");
+  background-size: cover;
 }
-.slick-prev::before {
+.owl-carousel .img2 {
+  background-image: url("../src/Lacs_neouvielle/21.JPG");
+  background-size: cover;
+}
+.owl-carousel .img3 {
+  background-image: url("../src/Lacs_neouvielle/22.JPG");
+  background-size: cover;
+}
+.owl-carousel .img4 {
+  background-image: url("../src/Lacs_neouvielle/34.JPG");
+  background-size: cover;
+}
+.owl-carousel .img5 {
+  background-image: url("../src/Lacs_neouvielle/33.JPG");
+  background-size: cover;
+}
+.owl-carousel .img6 {
+  background-image: url("../src/Lacs_neouvielle/32.JPG");
+  background-size: cover;
+}
+.owl-carousel .img7 {
+  background-image: url("../src/Lacs_neouvielle/24.JPG");
+  background-size: cover;
+}
+.owl-carousel .img8 {
+  background-image: url("../src/Lacs_neouvielle/23.JPG");
+  background-size: cover;
+}
+.owl-carousel .img9 {
+  background-image: url("../src/Lacs_neouvielle/26.JPG");
+  background-size: cover;
+}
+.owl-carousel .img10 {
+  background-image: url("../src/Lacs_neouvielle/28.JPG");
+  background-size: cover;
+}
+.item {
+  height: 300px;
+}
+
+.owl-prev span,
+.owl-next span {
+  font-size: 50px;
   color: #7aa95c;
-  margin-right: 2em;
-  font-size: 40px;
-}
-.slick-next::before {
-  color: #7aa95c;
-  margin-right: 2em;
-  font-size: 40px;
 }
 
 /********************************************
