@@ -1,5 +1,5 @@
 /**********************************************
-                    GLOBAL 
+                    GLOBAL
 ********************************************/
 html {
   scroll-behavior: smooth;
@@ -65,7 +65,7 @@ header ul li a:hover {
 }
 
 /************************************************************
-                        MAIN 
+                        MAIN
 ****************************************************************/
 
 h1 {
@@ -76,7 +76,7 @@ h1 {
 }
 
 /************************************************************
-                    SECTION 1/ DERNIERS ARTICLES 
+                    SECTION 1/ DERNIERS ARTICLES
 **********************************************************/
 .last-articles .first-article,
 .second-article {
@@ -150,7 +150,57 @@ button:hover {
 .profil-box h2 {
   text-align: center;
 }
+/***************************************************************************
+                          AFFICHAGE COMMENTAIRES
+****************************************************************************/
+.table-comments {
+  width: 100%;
+}
 
+.table-comments tr {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #7aa95c;
+  border-top: 2px solid #7aa95c;
+}
+.comments-infos {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  font-weight: bold;
+  justify-content: space-between;
+  color: #7aa95c;
+}
+.comments-message {
+  width: 90%;
+}
+/***************************************************************************
+                          FORMULAIRE COMMENTAIRES
+****************************************************************************/
+.form-comments {
+  display: flex;
+  flex-direction: column;
+}
+.form-comments label {
+  margin: 2em 0;
+}
+.form-comments .button {
+  width: 150px;
+  margin: 1em auto;
+  border: 0;
+  background-color: #7aa95c;
+  color: #fff;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.pseudo {
+  width: 40%;
+}
+.message {
+  width: 80%;
+  height: 150px;
+}
 /***************************************************************
                         FOOTER
 **************************************************************/
