@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="rocamadour.css" />
+  <link rel="stylesheet" href="Rocamadour/rocamadour.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <title>Rocamadour</title>
+</head>
+
+<body>
+  <header>
+    <img src="../src/images/logo_header.png" alt="logo du site" />
+    <nav>
+      <ul>
+        <li><a href="../index.html"> Accueil</a></li>
+        <li><a href="../Articles/articles.html"> Articles</a></li>
+        <li><a href="#contact"> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <h1>Rocamadour</h1>
+    <section class="grid">
+      <img class="image-1" src="../src/Rocamadour/10.jpg" alt="" />
+      <img class="image-2" src="../src/Rocamadour/3.jpg" alt="" />
+      <img class="image-3" src="../src/Rocamadour/15.jpg" alt="" />
+      <img class="image-4" src="../src/Rocamadour/5.jpg" alt="" />
+      <img class="image-5" src="../src/Rocamadour/16.jpg" alt="" />
+      <img class="image-6" src="../src/Rocamadour/4.jpg" alt="" />
+      <img class="image-7" src="../src/Rocamadour/6.jpg" alt="" />
+    </section>
+    <section class="info">
+      <div class="informations">
+        <div class="description">
+          <img src="../src/Rocamadour/rocamadour.png" alt="Panneau Rocamadour" />
+          <p>
+            Le Dimanche 23 Octobre, nous sommes allés visiter Rocamadour qui
+            se trouve dans le 46 avec 5 personnes. Nous avons pris notre temps
+            d'où le temps parcouru pour cette randonnée. Nous avons découvert
+            3 gouffres, des grottes qui nous ont permis de faire des
+            rencontres avec pas mal de chauve-souris. Evidemment nous pris le
+            temps de découvrir le château ainsi que les Eglises qui ont rendu
+            cette village si connue. C'était magnifique !
+          </p>
+        </div>
+        <img src="../src/Rocamadour/carte.JPG" alt="carte de la randonnée" />
+      </div>
+    </section>
+    <section class="slides">
+      <div class="owl-carousel owl-theme">
+        <div class="item img1"></div>
+        <div class="item img2"></div>
+        <div class="item img3"></div>
+        <div class="item img4"></div>
+        <div class="item img5"></div>
+        <div class="item img6"></div>
+        <div class="item img7"></div>
+      </div>
+    </section>
+    <article class="comments">
+      <h2>Commentaires</h2>
+      <table class="table-comments">
+        <?php
+        foreach ($comments as $comment) : ?>
+          <tr>
+            <td class="comments-infos">
+              <p><?= $comment['pseudo'] ?></p>
+              <p><?= $comment['created_at'] ?></p>
+            </td>
+            <td class="comments-message">
+              <p><?= $comment['content'] ?></p>
+            </td>
+          </tr>
+        <?php endforeach; ?>
+      </table>
+      <form method="POST" action="../comments.php" class="form-comments">
+        <input type="hidden" name="id" value="2">
+        <label for=" pseudo">Pseudo</label>
+        <input type="text" name="pseudo" placeholder="Entrez votre pseudo" class="pseudo">
+        <label for="message">Commentaire</label>
+        <textarea name="message" id="message" cols="30" rows="10" class="message" placeholder="Entrez un commentaire"></textarea>
+        <input class="button" type="submit" value="Envoyer">
+      </form>
+    </article>
+  </main>
+  <footer id="contact">
+    <div class="footer-mail">
+      <h2>Contactez-nous</h2>
+      <i class="fa-solid fa-envelope fa-xl"></i>
+      <a mailto="#">ast-loisir@gmail.com</a>
+    </div>
+    <div class="images-footer">
+      <img src="../src/images/footer_1.jpg" alt="Paysage en randonnée" />
+      <img src="../src/images/footer_2.jpg" alt="Paysage en randonnée" />
+      <img src="../src/images/footer_3.jpg" alt="Paysage en randonnée" />
+      <img src="../src/images/footer_4.jpg" alt="Paysage en randonnée" />
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
